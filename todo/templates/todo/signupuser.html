@@ -1,20 +1,20 @@
- {% extends 'todo/base.html' %}
- {% block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
-
-    <h1>Login</h1>
+    <h1>Sign Up</h1>
 </head>
 <body>
+{% extends 'todo/base.html' %}
+    {% block content%}
 <h2>{{ error }}</h2>
 <form method="POST">
     {% csrf_token %}
 {{ form.as_p }}
-<button type="submit">Login</button>
+<button type="submit">Sign Up</button>
 </form>
 </body>
 {% endblock %}
+</html>
